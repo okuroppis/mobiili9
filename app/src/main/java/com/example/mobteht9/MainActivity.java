@@ -34,19 +34,19 @@ public class MainActivity extends AppCompatActivity {
 
             } else if (Math.abs(velocityX) > Math.abs(velocityY)) {
 
-                double color = Math.abs((double) velocityX);
+                double punane = Math.abs((double) velocityX);
 
                 LinearLayout ll = findViewById(R.id.layoutti);
 
-                ll.setBackgroundColor(Color.rgb((int) (color / 16000 * 255 + 50), 0, 0));
-                Log.d("x", String.valueOf(color / 16000 * 255 + 50));
+                ll.setBackgroundColor(Color.rgb((int) (punane / 16000 * 255 + 50), 0, 0));
+                Log.d("x", String.valueOf(punane / 16000 * 255 + 50));
                 return true;
             } else {
 
                 LinearLayout ll = findViewById(R.id.layoutti);
-                double color2 = Math.abs((double) velocityY);
-                ll.setBackgroundColor(Color.rgb(0, 0, (int) (color2 / 16000 * 255 + 50)));
-                Log.d("y", String.valueOf(color2 / 16000 * 255 + 50));
+                double sinine = Math.abs((double) velocityY);
+                ll.setBackgroundColor(Color.rgb(0, 0, (int) (sinine / 16000 * 255 + 50)));
+                Log.d("y", String.valueOf(sinine / 16000 * 255 + 50));
                 return true;
 
             }
